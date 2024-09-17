@@ -97,5 +97,4 @@ describe('ProductsController', () => {
       expect(await
       productsController.findByCriteria(criteria)).toBe(mockedResponseData);
   });
-  
 });
