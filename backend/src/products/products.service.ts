@@ -54,4 +54,11 @@ export class ProductsService {
     }
     throw new Error('Product not found');
   }
+  
+  async findByCriteria(criteria: any): Promise<Product[]> {
+    return this.productModel.findAll({
+      where: criteria,
+    });
+  }
+
 }
